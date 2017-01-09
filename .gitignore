@@ -6,6 +6,7 @@
 Session.vim
 .netrwhist
 *~
+.idea
 
 # Distribution / packaging
 dist/

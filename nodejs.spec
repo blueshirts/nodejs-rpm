@@ -13,17 +13,17 @@
 %global tapsetdir %{tapsetroot}/tapset/%{_build_cpu}
 
 Name:          %{_base}js
-Version:       7.4.0
+Version:       6.9.4
 Release:       %{_build_number}%{?dist}
 Provides:      %{_base}js(engine)
 Summary:       Node.js is a server-side JavaScript environment that uses an asynchronous event-driven model.
-Packager:      Kazuhisa Hara <kazuhisya@gmail.com>
+Packager:      Anthony Milano <Anthony.Milano@fireeye.com>
 Group:         Development/Libraries
 License:       MIT License
 URL:           https://nodejs.org
 Source0:       %{url}/dist/v%{version}/%{_base}-v%{version}.tar.gz
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-tmp
-Prefix:        /usr
+Prefix:        /usrhttps://github.com/blueshirts/nodejs-rpm
 BuildRequires: tar
 BuildRequires: gcc
 BuildRequires: gcc-c++
@@ -182,51 +182,5 @@ rm -rf $RPM_SOURCE_DIR/%{_base}-v%{version}-linux-%{_node_arch}
 %{tapsetroot}
 
 %changelog
-* Thu Jan  5 2017 Kazuhisa Hara <kazuhisya@gmail.com> - 7.4.0-1
-- updated to node.js version 7.4.0
-* Wed Dec 21 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 7.3.0-1
-- updated to node.js version 7.3.0
-* Wed Dec  7 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 7.2.1-1
-- updated to node.js version 7.2.1
-* Thu Nov 24 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 7.2.0-1
-- updated to node.js version 7.2.0
-* Wed Nov  9 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 7.1.0-1
-- updated to node.js version 7.1.0
-* Wed Oct 26 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 7.0.0-1
-- updated to node.js version 7.0.0
-* Mon Oct 24 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.9.1-1
-- updated to node.js version 6.9.1
-* Wed Oct 19 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.9.0-1
-- updated to node.js version 6.9.0
-* Tue Oct 18 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.8.1-1
-- updated to node.js version 6.8.1
-* Thu Oct 13 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.8.0-1
-- updated to node.js version 6.8.0
-* Fri Sep 30 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.7.0-1
-- updated to node.js version 6.7.0
-* Fri Sep 16 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.6.0-1
-- updated to node.js version 6.6.0
-* Tue Sep 13 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.5.0-2
-- Added SUSE Support. fix #58
-* Tue Aug 30 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.5.0-1
-- updated to node.js version 6.5.0
-* Wed Aug 17 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.4.0-1
-- updated to node.js version 6.4.0
-* Fri Jul 22 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.3.1-1
-- updated to node.js version 6.3.1
-* Thu Jul 21 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.3.0-2
-- Minor fixes to make it fully compatible with CentOS 7 #57
-* Thu Jul  7 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.3.0-1
-- updated to node.js version 6.3.0
-* Mon Jun 20 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.2.2-1
-- updated to node.js version 6.2.2
-* Fri Jun  3 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.2.1-1
-- updated to node.js version 6.2.1
-* Wed May 18 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.2.0-1
-- Updated to node.js version 6.2.0
-* Tue May 10 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.1.0-2
-- dist tag is get in the way in accordance with the guidelines. #54
-* Fri May  6 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.1.0-1
-- Updated to node.js version 6.1.0
-* Wed Apr 27 2016 Kazuhisa Hara <kazuhisya@gmail.com> - 6.0.0-1
-- Updated to node.js version 6.0.0
+* Thu Jan  5 2017 Anthony Milano <anthony.milano@fireeye.com.com> - 6.9.4
+- Building version 6.9.4.
